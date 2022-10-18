@@ -71,14 +71,14 @@ body{
 .profile img:hover{
     border: 2px solid hsl(26, 100%, 55%);
 }
-.mySlides img{
+.mySlides img,.myslides2 img{
     width: 85%;
     border-radius: 15px;
 }
 .container{
     position: relative;
 }
-.mySlides{
+.mySlides,.myslides2{
     display: none;
 }
 .next, .prev{
@@ -136,7 +136,7 @@ body{
     width: 50%;
     padding-top: 3rem ;
 }
-.slides{
+.slides,.slides2{
     text-align: center;
     width: 50%;
 }
@@ -294,4 +294,54 @@ body{
 }
 .cancel img, .cart img{
     cursor: pointer;
+}
+.prev2,.next2{
+    display: none;
+}
+@media screen and (max-width: 375px) {
+    body{
+        width: 100%;
+    }
+    .link{
+        display: none;
+    }
+    .main{
+        width: 100%;
+        padding: 0rem;
+        border-radius: 0px;
+    }
+    .row{
+        display: none;
+    }
+    .bottom,.last{
+        flex-direction: column;
+    }
+    .slides,.mySlides,.mySlides img,.side,.last button, .quantity{
+        width: 100%;
+    }
+    .mySlides img{
+        border-radius: 0px;
+    }
+    .side{
+    }
+    .bold{
+        font-size: 2rem;
+    }
+    .quantity{
+         padding-right: 0rem;
+         border-radius: 5px;
+    }
+    .next,.prev{
+        display: block;
+        top: 300px;
+    }
+    .next{
+        left: 300px;
+    }
+    .prev{
+        left: 10px;
+    }
+    .mySlides img{
+        pointer-events: none;
+    }
 }

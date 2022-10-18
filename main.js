@@ -45,6 +45,9 @@ showslides(slideIndex)
 showslides2(slideIndex)
 
 function plusSlides(n) {
+    showslides(slideIndex += n)
+}
+function plusSlides2(n) {
     showslides2(slideIndex += n)
 }
 function currentSlide(n){
