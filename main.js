@@ -12,10 +12,13 @@ const fullEl = document.querySelector(".filled")
 const checkoutEl = document.querySelector(".checkout")
 const emptyEl = document.querySelector(".empty")
 const noEl = document.querySelector(".cart-no")
+const linksEl = document.querySelector(".links")
 let slideIndex = 1
 let number = 0
 let total = 0
-
+function cancel2(){
+    linksEl.style.display = "none"
+}
 
 function addToCart (){
     if (number === 0){

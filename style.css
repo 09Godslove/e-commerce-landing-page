@@ -295,15 +295,38 @@ body{
 .cancel img, .cart img{
     cursor: pointer;
 }
-.prev2,.next2{
+.prev2,.next2,.cancel2{
     display: none;
 }
 @media screen and (max-width: 375px) {
     body{
         width: 100%;
     }
+    .wrapper{
+        margin-bottom: 0rem;
+    }
+    .cancel2{
+        display: block;
+        margin: 1rem 0rem;
+    }
+    .links{
+        display:none;
+        position: absolute;
+        flex-direction: column;
+        z-index: 10;
+        left: 0px;
+        background-color: white;
+        gap: 20px;
+        top: 0px;
+        padding-left: 20px;
+        padding-bottom: 56.4rem;
+        width: 50%;
+    }
     .link{
-        display: none;
+        padding: 0px;
+        border: none;
+        font-weight: bold;
+        color: black;
     }
     .main{
         width: 100%;
@@ -321,8 +344,6 @@ body{
     }
     .mySlides img{
         border-radius: 0px;
-    }
-    .side{
     }
     .bold{
         font-size: 2rem;
@@ -343,5 +364,10 @@ body{
     }
     .mySlides img{
         pointer-events: none;
+    }
+    .cart2{
+        left: 16px;
+        width: 90%;
+        z-index: 10;
     }
 }
