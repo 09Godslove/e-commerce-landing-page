@@ -17,7 +17,7 @@ body{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem 0rem 0rem 0rem;
+    padding: 2rem 0.5rem 0rem 0.5rem;
     border-bottom: 2px solid  hsl(223, 64%, 98%);
     margin-bottom: 3rem;
 }
@@ -27,6 +27,20 @@ body{
     width: 60%;
     gap: 50px;
     align-items: center;
+}
+.solid-bars{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    display: none;
+}
+.bar{
+    padding: 1.5px;
+    background-color: hsl(219, 9%, 45%);
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 20px;
 }
 .links{
     display:flex;
@@ -172,7 +186,8 @@ body{
     border-radius: 5px;
     text-align: center;
     justify-content: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
 .old-price{
     color: hsl(219, 9%, 45%);
@@ -208,6 +223,7 @@ body{
     padding: 0.7rem;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 5px 10px 8px hsl(25, 100%, 94%);
 }
 .last button img{
     width: 15px;
@@ -221,6 +237,7 @@ body{
     border-radius: 10px;
     width: 20%;
     display: none;
+    box-shadow: 5px 10px 8px hsl(219, 9%, 70%);
 }
 .filled, .cart-price{
     display: flex;
@@ -301,6 +318,7 @@ body{
 @media screen and (max-width: 375px) {
     body{
         width: 100%;
+        background-color:  hsl(25, 5%, 94%)
     }
     .wrapper{
         margin-bottom: 0rem;
@@ -309,6 +327,9 @@ body{
         display: block;
         margin: 1rem 0rem;
     }
+    .solid-bars{
+        display: block;
+    }
     .links{
         display:none;
         position: absolute;
@@ -316,14 +337,13 @@ body{
         z-index: 10;
         left: 0px;
         background-color: white;
-        gap: 20px;
         top: 0px;
         padding-left: 20px;
-        padding-bottom: 56.4rem;
+        padding-bottom: 49rem;
         width: 50%;
     }
     .link{
-        padding: 0px;
+        padding: 10px;
         border: none;
         font-weight: bold;
         color: black;
@@ -333,8 +353,21 @@ body{
         padding: 0rem;
         border-radius: 0px;
     }
+    .side{
+        padding-top: 1rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .row{
         display: none;
+    }
+    .flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .old-price{
+        margin-top: 1.5rem;
     }
     .bottom,.last{
         flex-direction: column;
@@ -369,5 +402,9 @@ body{
         left: 16px;
         width: 90%;
         z-index: 10;
+    }
+    .cart-no{
+        top: 45px;
+        right: 90px;
     }
 }

@@ -17,6 +17,11 @@
 <body>
   <div class="main">
     <div class="wrapper">
+      <div class="solid-bars" onclick="showLinks()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
       <div class = "header">
         <div><img src="images/logo.svg" alt=" sneakers"></div>
         <div class="links">
@@ -29,9 +34,9 @@
         </div>
       </div>
       <div class="cart">
-        <div><img src="images/icon-cart copy.svg" alt="cart" onclick="showCart()" ondblclick = "hideCart()"></div>
+        <div><img src="images/icon-cart copy.svg" alt="cart" onclick="showCart()" ></div>
         <div class="cart-no">0</div>
-        <div class="profile"><img src="images/image-avatar.png" alt="profile pic"></div>
+        <div class="profile"><img src="images/image-avatar.png" alt="profile pic" onclick = "hideCart()"></div>
       </div>
      
     </div>
@@ -70,11 +75,13 @@
         <div class="company">SNEAKER COMPANY</div>
         <div class="bold">Fall Limited Edition <br> Sneakers</div>
         <div class="small">These low-profile sneakers are your perfect causal wear <br> companion. Feauturing a durable rubber outer sole, they'll <br> withstand everything the weather can offer.</div>
-        <div class="main-price">
-          <div class="big-price">$125.00</div>
-          <div class="discount">50%</div>
+        <div class="flex">
+          <div class="main-price">
+            <div class="big-price">$125.00</div>
+            <div class="discount">50%</div>
+          </div>
+          <div class="old-price">$250</div>
         </div>
-        <div class="old-price">$250</div>
         <div class="last">
           <div class="quantity">
             <div class="minus" onclick=" minus()"><img src="images/icon-minus.svg" alt="minus"></div>

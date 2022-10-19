@@ -19,6 +19,9 @@ let total = 0
 function cancel2(){
     linksEl.style.display = "none"
 }
+function showLinks(){
+    linksEl.style.display = "block"
+}
 
 function addToCart (){
     if (number === 0){
