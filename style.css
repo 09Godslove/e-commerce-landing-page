@@ -224,6 +224,7 @@ body{
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 5px 10px 8px hsl(25, 100%, 94%);
+    margin-bottom: 1rem;
 }
 .last button img{
     width: 15px;
